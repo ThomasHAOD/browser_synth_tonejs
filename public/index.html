@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="js/bundle.js"></script>
     <title>TSynth</title>
 </head>
 <body>
-    
+    <div id="header-wrapper"> <header>Welcome to TSynth <img src="../public/images/headphones.jpg" id="headphones"></header></div>
+
+    <div id="synth-wrapper">
+
+        <div class="oscillator-wrapper">
+
+            <div class="oscillator">
+                <select name="oscillator1" id="oscillator1">
+                     <option value="select" selected disabled>Choose a Waveform</option>
+                </select>
+            </div>
+
+            <div class="volume">
+                <input type="range" min="1" max="100" value="50" class="slider" id="volume1">
+            </div>
+
+            <div class="envelope">
+                <input type="range" min="1" max="100" value="50" class="slider" id="attack">
+                <input type="range" min="1" max="100" value="50" class="slider" id="decay">
+                <input type="range" min="1" max="100" value="50" class="slider" id="sustain">
+                <input type="range" min="1" max="100" value="50" class="slider" id="release">
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
 </body>
 </html>

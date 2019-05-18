@@ -1,0 +1,27 @@
+header {
+    height:100px;
+}
+
+.oscillator-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.oscillator {
+    grid-column: 1 span 2;
+}
+
+.envelope {
+    grid-column: 4 span 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#header-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+#headphones {
+    height: 100px;
+}
