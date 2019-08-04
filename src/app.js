@@ -9,4 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     header.addEventListener('click', () => {Tone.start()})
 
 
+    const loop = new Tone.Loop(function (time) {
+        synth.triggerAttackRelease(["C2"], "8n", time);
+    }, "4n");
+    loop.start("1m").stop("4m");
+
+    Tone.Transport.start();
 });
